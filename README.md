@@ -2,7 +2,7 @@
 Hello everyone, this is my first project on Django!
 
 You can open my project with IDE - PyCharm, or other IDE.
-You need to install Python.
+You need to install Python and Django.
 
 Steps to launch my project :
 / First step - Open directory of project in terminal
