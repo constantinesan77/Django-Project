@@ -1,0 +1,15 @@
+<html lang="en">
+<head>
+    <title>News</title>
+    {% include "myApp/test1.html" %}
+</head>
+<body>
+<h1> Posts about Wroclaw</h1>
+{% block content %}
+    {% for post in object_list %}
+        <a href="/news/{{post.id}}"><h3>{{post.title}}</h3></a>
+    {% endfor %}
+{% endblock %}
+</body>
+{% include "myApp/rules.html" %}
+</html>

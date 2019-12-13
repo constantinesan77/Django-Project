@@ -1,0 +1,18 @@
+
+<html lang="en">
+<head>
+    <title>News</title>
+    {% include "myApp/template.html" %}
+    </head>
+<body>
+<h1>It works!</h1>
+{% block content %}
+    {% for post in object_list.items %}
+        <a href = "/news/{{post.id}}">
+            <h3>{{post.title}}</h3></a>
+        <h5>{{post.date|date:"d-m-Y"}}</h5>
+    {% endfor %}
+{% endblock %}
+{% include "myApp/rules.html" %}
+</body>
+</html>

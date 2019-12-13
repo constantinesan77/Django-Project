@@ -1,0 +1,13 @@
+<html lang="en">
+<head>
+    <title>News</title>
+    {% include "myApp/test1.html" %}
+</head>
+<body>
+{% block content %}
+        <h2 class="text-info">{{post.title}}</h2>
+        <p>{{post.text|safe|linebreaks}}</p>
+    {% endblock %}
+</body>
+{% include "myApp/rules.html" %}
+</html>

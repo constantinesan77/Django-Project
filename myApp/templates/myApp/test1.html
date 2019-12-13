@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<body style="background:silver">
+{% load static %}
+{% block content %}
+{% endblock %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/test1.css' %}">
+<nav>
+<ul>
+  <li><a href="/">Main Page</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/lottery">Lottery</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/news">News</a></li>
+</ul>
+</nav>
+</body>
+</head>
+</html>

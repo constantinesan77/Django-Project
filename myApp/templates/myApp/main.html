@@ -1,0 +1,15 @@
+<html lang="en">
+<head>
+    {% include "myApp/test1.html" %}
+    <title>Wroclaw</title>
+</head>
+<body>
+{% load static %}
+<h1 style="text-align:center">This pages about Wroclaw</h1>
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+<div class="container">
+  <img src="/static/img/wro.jpeg" width="960" height="640" />
+</div>
+</body>
+{% include "myApp/rules.html" %}
+</html>
